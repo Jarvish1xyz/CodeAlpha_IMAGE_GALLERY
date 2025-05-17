@@ -1,0 +1,87 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+.mbody {
+    height: auto;
+    width: 100vw;
+    background-color: rgba(11, 113, 186, 0.349);
+}
+
+.content {
+    display: inline-block;
+}
+
+.navbar {
+    height: 5vh;
+    padding-top: 1vh;
+    background-color: rgba(11, 113, 186, 0.249);
+}
+
+.link {
+    margin: 0px auto;
+    height: 100%;
+    width: 80vh;
+    /* background-color: aqua; */
+}
+
+a {
+    margin: 0px 5vh;
+    color: black;
+}
+
+.image {
+    display: inline-block;
+    height: max-content;
+    width: max-content;
+    background-color: rgba(218, 243, 248, 0.7);
+    margin: 5vh 2vh;
+}
+
+.image, #img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, #img10, #img {
+    border-radius: 0.5rem;
+}
+
+#img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, #img10 {
+    height: 40vh;
+    margin: 2vh;
+    float: left;
+    transition: all 0.3s;
+}
+
+#img1:hover, #img2:hover, #img3:hover, #img4:hover, #img5:hover, #img6:hover, #img7:hover, #img8:hover, #img9:hover, #img10:hover {
+    transform: scale(1.05);
+    -webkit-filter: brightness(0.7);
+}
+
+#img11, #img21, #img31, #img41, #img51, #img61, #img71, #img81, #img91, #img101 {
+    display: none;
+    position: fixed;
+    top: 0vmin;
+    left: 0vmin;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+@keyframes first {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#img{
+    height: 80vh;
+    opacity: 1;
+}
